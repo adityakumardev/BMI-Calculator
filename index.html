@@ -1,38 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BMI-Calculator</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<body>
+  <body>
     <div class="container">
-        <h1> BMI Calculator </h1>
-        <form>
-            <p><label for="height">Enter Your Height (CM): </label>
-                <input type="number" name="height" id="height">
-            </p>
-            <p>
-                <label for="weight">Enter Your Weight (KG): </label>
-                <input type="number" name="weight" id="weight">
-            </p>
-            <div class="buttons">
-                <button class="calculate">Calculate</button>
-                <button class="reset">Clear</button>
-            </div>
-            <div class="results"></div>
-        </form>
-        <ul class="info">
-            <li>Healthy BMI range: 18.5 kg/m<sup>2</sup> - 25 kg/m<sup>2</sup></li>
-            <li>Healthy weight for the height: 59.9 kg - 81 kg</li>
-            <li>BMI Prime: 0.8</li>
-            <li>Ponderal Index: 11.1 kg/m<sup>3</sup></li>
-        </ul>
+      <h1>BMI Calculator</h1>
+      <form>
+        <p>
+          <label for="height">Enter Your Height (CM): </label>
+          <input type="number" name="height" id="height" />
+        </p>
+        <p>
+          <label for="weight">Enter Your Weight (KG): </label>
+          <input type="number" name="weight" id="weight" />
+        </p>
+        <div class="buttons">
+          <button class="calculate">Calculate</button>
+          <button class="reset">Clear</button>
+        </div>
+        <div class="results"></div>
+      </form>
+      <table>
+        <tbody>
+          <tr class="heading">
+            <td class="HinfoL">Classification</td>
+            <td>BMI</td>
+            <td>BMI Prime</td>
+          </tr>
+          <tr>
+            <td class="HinfoL">Severe Thinness</td>
+            <td>&lt; 16</td>
+            <td>&lt; 0.64</td>
+          </tr>
+          <tr>
+            <td class="HinfoL">Moderate Thinness</td>
+            <td>16 - 17</td>
+            <td>0.64 - 0.68</td>
+          </tr>
+          <tr>
+            <td class="HinfoL">Mild Thinness</td>
+            <td>17 - 18.5</td>
+            <td>0.68 - 0.74</td>
+          </tr>
+          <tr>
+            <td class="HinfoL">Normal</td>
+            <td>18.5 - 25</td>
+            <td>0.74 - 1</td>
+          </tr>
+          <tr>
+            <td class="HinfoL">Overweight</td>
+            <td>25 - 30</td>
+            <td>1 - 1.2</td>
+          </tr>
+          <tr>
+            <td class="HinfoL">Obese Class I</td>
+            <td>30 - 35</td>
+            <td>1.2- 1.4</td>
+          </tr>
+          <tr>
+            <td class="HinfoL">Obese Class II</td>
+            <td>35 - 40</td>
+            <td>1.4 - 1.6</td>
+          </tr>
+          <tr>
+            <td class="HinfoL">Obese Class III</td>
+            <td>&gt; 40</td>
+            <td>&gt; 1.6</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
-</body>
-<script src="script.js"></script>
-
+  </body>
+  <script src="script.js"></script>
 </html>

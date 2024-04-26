@@ -31,5 +31,5 @@ calculatebutton.addEventListener("click", function (event) {
 const clearButton = document.querySelector('.reset');
 
 clearButton.addEventListener("click", function(event) {
-    
+    document.querySelector('form').reset();
 });
