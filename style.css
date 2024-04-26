@@ -48,6 +48,7 @@ input[type="number"] {
 }
 
 .reset {
+    margin-left: 25px;
     width: 30%;
     padding: 10px;
     background-color: #333;
