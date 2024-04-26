@@ -96,3 +96,71 @@ table {
     background-color: #336699;
     color: #fff;
   }
+
+  /* Default styles for all devices */
+  .container {
+    box-sizing: border-box;
+    max-width: 400px;
+    margin: 50px auto;
+    margin-top: 20px;
+    padding: 20px;
+    padding-top: 10px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Styles for devices with a screen width of 768px or less */
+  @media screen and (max-width: 768px) {
+    .container {
+      max-width: 100%;
+      padding: 10px;
+    }
+  
+    form {
+      margin-top: 10px;
+    }
+  
+    input[type="number"] {
+      width: 100%;
+    }
+  
+    .calculate {
+      width: 100%;
+      font-size: medium;
+    }
+  
+    table {
+      width: 100%;
+    }
+  }
+
+  /* Default styles for all devices */
+  .button-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .calculate,
+  .reset {
+    padding: 10px 20px;
+    font-size: medium;
+    cursor: pointer;
+  }
+
+  .calculate {
+    width: 60%;
+  }
+
+  .reset {
+    width: 30%;
+  }
+  
+  /* Styles for devices with a screen width of 768px or less */
+  @media screen and (max-width: 768px) {
+    .button-container {
+      flex-direction: row;
+      align-items: center;
+    }
+  }
