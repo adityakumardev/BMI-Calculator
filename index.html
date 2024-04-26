@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI-Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1> BMI Calculator </h1>
+        <form>
+            <p><label for="height">Enter Your Height (CM): </label>
+                <input type="number" name="height" id="height">
+            </p>
+            <p>
+                <label for="weight">Enter Your Weight (KG): </label>
+                <input type="number" name="weight" id="weight">
+            </p>
+            <div class="buttons">
+                <button class="calculate">Calculate</button>
+                <button class="reset">Clear</button>
+            </div>
+            <div class="results"></div>
+        </form>
+        <ul class="info">
+            <li>Healthy BMI range: 18.5 kg/m<sup>2</sup> - 25 kg/m<sup>2</sup></li>
+            <li>Healthy weight for the height: 59.9 kg - 81 kg</li>
+            <li>BMI Prime: 0.8</li>
+            <li>Ponderal Index: 11.1 kg/m<sup>3</sup></li>
+        </ul>
+    </div>
+</body>
+<script src="script.js"></script>
+
+</html>
