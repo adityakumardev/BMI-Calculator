@@ -21,11 +21,17 @@ calculatebutton.addEventListener("click", function (event) {
         result.innerHTML = "Height cannot be zero.";
     }
 
-    // Calculate BMI
-    const bmi = weightValue / (heightValue * heightValue);
+    if (weightValue === 0) {
+        result.innerHTML = "Weight cannot be zero.";
+    }
 
-    // Display the BMI result
-    result.innerHTML = "Your BMI is: " + bmi.toFixed(2) + " kg/m²";
+    // Calculate BMI
+    if(!isNaN(heightValue) && !isNaN(weightValue)) {
+        const bmi = weightValue / (heightValue * heightValue);
+        
+        // Display the BMI result
+        result.innerHTML = "Your BMI is: " + bmi.toFixed(2) + " kg/m²";
+    }
 });
 
 const clearButton = document.querySelector('.reset');
